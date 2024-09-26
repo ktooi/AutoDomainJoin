@@ -1,0 +1,26 @@
+@{
+    domain = "ad.example.com"
+    username = "AD\Administrator"
+
+    # Option 1: Use plain text password
+    #password = "YourPasswordHere"
+
+    # Option 2: Use secure password
+    securePassword = "YourEncryptedPasswordString"
+
+    # Key specification (optional)
+    # Option A: Specify key file path
+    #keyFilePath = "C:\secure\encryptionkey.key"
+
+    # Option B: Specify key directly as Base64-encoded string
+    #key = "Base64EncodedKeyString"
+
+    # OU Path for the computer account (optional)
+    OUPath = "CN=Computers,DC=ad,DC=example,DC=com"
+
+    # DNS servers (optional)
+    dnsServers = @("192.168.0.1")
+
+    # Interface names (optional)
+    interfaceNames = @("Ethernet", "Wi-Fi")
+}
